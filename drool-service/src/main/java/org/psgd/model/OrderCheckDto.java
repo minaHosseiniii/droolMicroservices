@@ -6,7 +6,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class Order {
+public class OrderCheckDto {
     private String cartType;
     private Integer amount;
     private Integer discount;

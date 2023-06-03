@@ -4,29 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7da90777-8156-47b1-8dfb-be989dcd79d6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/drool-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/drool-service/src/main/java/org/psgd/DroolServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/drool-service/src/main/java/org/psgd/controller/DroolController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/drool-service/src/main/java/org/psgd/model/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/drool-service/src/main/java/org/psgd/services/DroolService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/drool-service/src/main/resources/META-INF/kmodule.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/drool-service/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/drool-service/src/main/resources/maven/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/drool-service/src/main/resources/rules/order.drl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/org/pasargad/OrderServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/org/pasargad/controller/MegaOfferController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/org/pasargad/model/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/org/pasargad/service/MegaOfferService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="7da90777-8156-47b1-8dfb-be989dcd79d6" name="Changes" comment="check availability to access rules in third service">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drool-service/src/main/java/org/psgd/controller/DroolController.java" beforeDir="false" afterPath="$PROJECT_DIR$/drool-service/src/main/java/org/psgd/controller/DroolController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drool-service/src/main/java/org/psgd/model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/drool-service/src/main/java/org/psgd/model/OrderCheckDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drool-service/src/main/java/org/psgd/services/DroolService.java" beforeDir="false" afterPath="$PROJECT_DIR$/drool-service/src/main/java/org/psgd/services/DroolService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drool-service/src/main/resources/rules/order.drl" beforeDir="false" afterPath="$PROJECT_DIR$/drool-service/src/main/resources/rules/order.drl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +88,7 @@
       <recent name="org.psgd.configuration" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.DroolServiceApplication">
+  <component name="RunManager" selected="Spring Boot.OrderServiceApplication">
     <configuration name="CurrencyExchangeServiceSampleApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="currency-exchange-sample-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.psgd.CurrencyExchangeServiceSampleApplication" />
@@ -176,8 +159,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.DroolServiceApplication" />
         <item itemvalue="Spring Boot.OrderServiceApplication" />
+        <item itemvalue="Spring Boot.DroolServiceApplication" />
         <item itemvalue="Docker.docker-compose.yml.nexus: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.postgres: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
@@ -223,8 +206,16 @@
       <workItem from="1685528255533" duration="1172000" />
       <workItem from="1685688222306" duration="4831000" />
       <workItem from="1685768443049" duration="5561000" />
-      <workItem from="1685776303500" duration="383000" />
+      <workItem from="1685776303500" duration="676000" />
     </task>
+    <task id="LOCAL-00001" summary="check availability to access rules in third service">
+      <created>1685776778692</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1685776778692</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,12 +232,16 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="check availability to access rules in third service" />
+    <option name="LAST_COMMIT_MESSAGE" value="check availability to access rules in third service" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/drool-service/src/main/java/org/psgd/controller/DroolController.java</url>
-          <line>18</line>
+          <line>17</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

@@ -1,31 +1,31 @@
 package rules;
-import org.psgd.model.Order;
+import org.psgd.model.OrderCheckDto;
 
 
 rule "HDFC"
     when
-        orderObject: Order(cartType == "HDFC" && amount > 10000)
+        orderObject: OrderCheckDto(cartType == "HDFC" && amount > 10000)
     then
         orderObject.setDiscount(10);
 end
 
 rule "ICICI"
     when
-        orderObject: Order(cartType == "ICIC" && amount > 10000)
+        orderObject: OrderCheckDto(cartType == "ICIC" && amount > 10000)
     then
        orderObject.setDiscount(8);
 end
 
 rule "DBS"
     when
-        orderObject: Order(cartType == "DBS" && amount > 10000)
+        orderObject: OrderCheckDto(cartType == "DBS" && amount > 10000)
     then
         orderObject.setDiscount(15);
 end
 
 rule "age based discount"
     when
-        orderObject: Order(age < 20 || age > 50)
+        orderObject: OrderCheckDto(age < 20 || age > 50)
     then
         orderObject.setDiscount(orderObject.getDiscount() + 10);
 end

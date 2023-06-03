@@ -4,12 +4,12 @@ package org.psgd.services;
 import org.kie.api.KieServices;
 import org.kie.api.runtime.KieContainer;
 import org.kie.api.runtime.KieSession;
-import org.psgd.model.Order;
+import org.psgd.model.OrderCheckDto;
 import org.springframework.stereotype.Service;
 
 @Service
 public class DroolService {
-    public Integer executeRules(Order fact) {
+    public Integer executeRules(OrderCheckDto fact) {
         KieServices kieServices = KieServices.Factory.get();
         KieContainer kieContainer = kieServices.getKieClasspathContainer();
         KieSession kieSession = kieContainer.newKieSession("session-1");
